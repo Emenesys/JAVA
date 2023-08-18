@@ -44,12 +44,16 @@ public class Desafio {
                     System.out.println("Valor de saldo insuficiente!");
                 } else {
                     saldo -= valorTransferido;
+
+                    System.out.println("Novo saldo: "+ saldo);
                 }
 
             } else if (opcao == 3) {
                 System.out.println("Valor recebido: ");
                 double valorRecebido = leitura.nextDouble();
                 saldo += valorRecebido;
+
+                System.out.println("Novo saldo: "+ saldo);
 
             }
         }
